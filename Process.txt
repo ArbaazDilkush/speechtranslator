@@ -1,0 +1,50 @@
+In this file, I would like to explain you about the steps and process of our project.
+
+
+Files contains in our project folder(A15PRO):
+1. speechtranslator.py
+2. pyttsx3-master
+3. pyinstaller
+4. trans
+5. file.txt
+6. images
+7. build and dist are folders created in the process of application creation.
+
+
+For Tesseract-ocr: 
+https://drive.google.com/open?id=1NekYTOe8n5YD0KyYl5NZGEiam8QZ4FPp
+Get tesseract-ocr package from the provided link and set the path as LocaldiskC:Programfiles:Tesseract-ocr
+After setting up in local diskC, set it up as environment variable in path.
+
+1.speechtranslator.py is the main python code. To run, command: python speechtranslator.py
+
+2. pyttsx3-master:(Text-to-speech)
+https://github.com/ethanaward/gtts 
+Download all the files from the provided link and place it into your project folder.
+After placing, open the folder, there open the command prompt at it's location and type command: python install setup.py
+By this command, the pyttsx3 library is settedup.
+
+3. pyinstaller:(creating an application from .py to .exe)
+https://pypi.org/project/PyInstaller/
+Download all the files from the provided link and place it into your project folder.
+After placing, open the folder, there open the command prompt at it's location and type command: python install setup.py
+By this command, the pyinstaller is settedup.
+
+To Convert .py to .exe:
+Command : pyinstaller filename.py
+Example : pyinstaller speechtranslator.py
+
+By this command the application is created. Automatically, build and dist folders are created through this process.
+For Application:-> open dist->filename folder(speechtranslator)->speechtranslator.exe
+
+4. trans:
+These are supported files of python3.6 or above python3.6.
+
+5. file.txt:
+Whenever user uploaded an image and click on convert button to translate, the image preprocessed is done through tesseract-ocr and the charcater is recognised and the strings of the image are given into file named as file.txt
+Where file.txt contains as: ???????
+Because, the image uploaded with telugu word as ???????.
+
+6. images:
+This folder contains .jpeg and .png formats of telugu word images.
+
